@@ -1,0 +1,35 @@
+{
+  "name": "eslint-config-pilena",
+  "version": "1.0.0",
+  "description": "ESLint rules for Pilena Team projects",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emartech/eslint-config-pilena.git"
+  },
+  "author": "Pilena Team",
+  "homepage": "https://github.com/emartech/eslint-config-pilena#readme",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "prettier --write \"./**/*.{js,md}\" package.json",
+    "prettier:check": "prettier --check \"./**/*.{js,md}\" package.json"
+  },
+  "keywords": [
+    "eslint",
+    "configuration"
+  ],
+  "devDependencies": {
+    "husky": "^4.2.3",
+    "prettier": "^1.19.1",
+    "prettier-plugin-package": "^0.3.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier:check"
+    }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all"
+  }
+}
