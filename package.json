@@ -19,9 +19,9 @@
     "configuration"
   ],
   "devDependencies": {
-    "husky": "^4.2.3",
-    "prettier": "^1.19.1",
-    "prettier-plugin-package": "^0.3.1"
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5",
+    "prettier-plugin-package": "^1.0.0"
   },
   "husky": {
     "hooks": {
